@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+         crossorigin="anonymous">
+  <link rel="stylesheet" href="mat.css">
+  
+  <title>Proceed To Invest</title>
+</head>
+<body>
+
+   <!--WELCOME  {BIENVINIDO}-->
+   <nav>
+    <label for="" class="logo">
+           <img src="img/logo 2.png" alt="">
+    </label>
+    <div class="back">
+      <a href="index.html">Back to homepage</a>
+    </div> 
+  </nav>
+
+      <!--DONT DELETE OO-->
+      <h2>
+        Fill out form to proceed to make an investment
+        Fill out form to proceed to make an investment
+      </h2>
+       <!--REMEMBER DONT DELETE OO-->
+
+         <!--MAIN HEADING-->
+      <h1>
+        Fill out form to proceed to make an Investment
+      </h1>
+
+
+       <!--INTREST CALCULATOR START-->
+      <div class="contain hidden">
+        <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        <h3>Intrest Calculator</h3>
+            
+           <div class="caal">
+            <label>Capital</label>
+           <input type="number" class="cal-1">
+
+            <label>Intrest Rate %</label>
+            <input type="number" class="cal-2">
+
+            <label>Duration (per month)</label>
+            <input type="number" class="cal-3">
+            <p class="result"></p>
+           </div>
+           <button class="calculate" onclick="caal()">calculate</button>
+      </div>
+      <!--INTREST CALCULATOR END-->
+  
+
+       <!--FORM START-->
+   <form id="form">
+     <!--Sur-name-->
+     <div class="form-control">
+       <label>Sur-name</label> 
+       <input type="text" name="name" id="surname" placeholder="Sur-name" onfocusout="validateSurname()">
+       <small>Error Message</small>
+     </div>
+      <!--First-name-->
+     <div class="form-control">
+      <label>First-name</label>
+      <input type="text" name="name" id="firstname" placeholder="First-name" onfocusout="validateFirstname()">    
+      <small>Error Message</small>
+    </div>
+      <!--Middle-name-->
+    <div class="form-control">
+      <label>Middle-name</label>
+      <input type="text" name="name" id="lastname" placeholder="Last-name" onfocusout="validateLastname()">    
+      <small>Error Message</small>
+    </div>
+     <!--Gender-->
+    <div class="form-control">
+      <label for="Gender">Gender</label>
+      <select id="inputState" class="form-control">
+        <option selected>...</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+       <!--Phone-->
+    <div class="form-control">
+      <label>Phone</label>
+      <input type="phone" name="name" id="phone" placeholder="Phone-number" onfocusout="validatePhone()">  
+      <small>Error Message</small>
+    </div>
+       <!--Email-->
+    <div class="form-control">
+      <label>Email</label>
+      <input type="email" name="name" id="email" placeholder="Email-address" onfocusout="validateEmail()">     
+      <small>Error Message</small>
+    </div>
+      <!--Address-->
+    <div class="form-control" >
+      <label>Address</label>
+      <input type="text" name="name" id="address" placeholder="Home-address" onfocusout="validateAddress()">     
+      <small>Error Message</small>
+    </div>
+      <!--Refferal-email-->
+    <div class="form-control" >
+      <label>Refferal-email</label>
+      <input type="email" name="name" id="refferal" placeholder="Refferal (Optional)">     
+      <small>Error Message</small>
+    </div>
+        <!--Amount-->
+    <div class="form-control" >
+      <label>Amount</label>
+      <select  class="form-control form-control-sm" id="selectbox" onchange="populate()">
+        <option selected>Select Plan...</option>
+        <option value="sel-1" id="sel-e">Basic Plan..(Min Amount: NGN 50,000) </option>
+        <option value="sel-2" id="sel-f">Standard plan..(Min Amount: NGN 100,000)</option>
+        <option value="sel-3" id="sel-g">Premium Plan..(Min Amount: NGN 500,000)</option>
+      </select>
+      <div class="form-control">
+        <input type="number" class="form-control form-control-sm " id="formg"
+         placeholder="Enter Amount...Eg(100,000)" >
+        <small>Error Message</small>
+      </div>
+    </div>
+        <!--Bank-name-->
+    <div class="form-control" >
+      <label>Bank-name</label>
+      <input type="text" name="name" id="bank-name" placeholder="Bank-name" onfocusout="validateBankname()">     
+      <small>Error Message</small>
+    </div>
+         <!--Amount-name-->
+    <div class="form-control" >
+      <label>Account-name</label>
+      <input type="text" name="name" id="account-name" placeholder="Account-name" onfocusout="validateAccountname()">
+      <small>Error Message</small>
+    </div>
+         <!--Amount-number-->
+    <div class="form-control" >
+      <label>Account-number</label>
+      <input type="text" name="name" id="account-number" placeholder="Account-number" onfocusout="validateAccountnumber()">    
+      <small>Error Message</small>
+    </div>
+   </form>
+   <!--FORM END-->
+
+    <!--BUTTONS-->
+   <div class="button">
+    <a href="success.html">Proceed to Invest</a>
+    <button id="bttn" class="btn">calculator</button>
+   </div>
+
+    <!--BYE-BYE {ADIOS}-->
+
+   <script src="mat.js"></script>
+ 
+</body>
+</html>
